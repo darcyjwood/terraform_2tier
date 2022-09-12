@@ -47,7 +47,7 @@ resource "aws_launch_template" "demo_database" {
   instance_type          = var.database_instance_type
   vpc_security_group_ids = [var.private_sg]
   key_name               = var.key_name
-  user_data              = filebase64("apache.sh")
+  user_data              = filebase64("nginx.sh")
 
   tags = {
     Name = "demo_database"
