@@ -1,3 +1,5 @@
-output "alb_dns" {
-  value = module.loadbalancing.alb_dns
+#root main.tf
+
+output "lb_dns" {
+    value = module.loadbalancing.lb_dns
 }
