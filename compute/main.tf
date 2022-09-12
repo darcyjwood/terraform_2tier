@@ -58,7 +58,7 @@ resource "aws_autoscaling_group" "demo_database" {
   name                = "demo_database"
   vpc_zone_identifier = tolist(var.public_subnet)
   min_size            = 2
-  max_size            = 3
+  max_size            = 5
   desired_capacity    = 5
 
   launch_template {
