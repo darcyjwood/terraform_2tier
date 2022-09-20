@@ -1,4 +1,5 @@
 # root main.tf
+# modules for compute, networking, and loadbalancing
 
 module "compute" {
   source         = "./compute"
