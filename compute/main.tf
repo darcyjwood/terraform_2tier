@@ -32,7 +32,7 @@ resource "aws_autoscaling_group" "demo_bastion" {
   name                = "demo_bastion"
   vpc_zone_identifier = tolist(var.public_subnet)
   min_size            = 1
-  max_size            = 1
+  max_size            = 2
   desired_capacity    = 1
 
   launch_template {
