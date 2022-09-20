@@ -26,3 +26,4 @@ module "loadbalancing" {
   web_sg        = module.networking.web_sg
   database_asg  = module.compute.database_asg
 }
+
