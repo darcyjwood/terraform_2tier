@@ -9,7 +9,7 @@ module "compute" {
   public_subnet  = module.networking.public_subnet
   elb            = module.loadbalancing.elb
   lb_tg          = module.loadbalancing.lb_tg
-  key_name       = "tf2t_project_east"
+  key_name       = "tf"
 }
 
 module "networking" {
